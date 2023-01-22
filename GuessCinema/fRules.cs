@@ -16,5 +16,17 @@ namespace GuessCinema
         {
             InitializeComponent();
         }
+
+        /**
+         * 
+         * fRules - класс реализующий окно, с правилами игры
+         * Класс содержит единственный обработчик событий - закрытие окна 
+         * 
+         * **/
+
+        private void pctExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
