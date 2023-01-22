@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GuessCinema
 {
-    public partial class Form1 : Form
+    public partial class fMainWindow : Form
     {
-        public Form1()
+        public fMainWindow()
         {
             InitializeComponent();
         }
