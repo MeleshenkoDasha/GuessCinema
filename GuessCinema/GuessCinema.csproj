@@ -52,6 +52,18 @@
     <Compile Include="fMainWindow.Designer.cs">
       <DependentUpon>fMainWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="fMenuMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMenuMusic.Designer.cs">
+      <DependentUpon>fMenuMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMenuVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMenuVideo.Designer.cs">
+      <DependentUpon>fMenuVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRules.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fMainWindow.resx">
       <DependentUpon>fMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMenuMusic.resx">
+      <DependentUpon>fMenuMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMenuVideo.resx">
+      <DependentUpon>fMenuVideo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRules.resx">
       <DependentUpon>fRules.cs</DependentUpon>
