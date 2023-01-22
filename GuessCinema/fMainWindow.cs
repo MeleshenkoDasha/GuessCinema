@@ -42,5 +42,23 @@ namespace GuessCinema
             // его вызов
             rules.ShowDialog();
         }
+
+        // Обработка нажатия кнопки, реализующей вызов формы меню музыкальной игры
+        private void btnMenuMusic_Click(object sender, EventArgs e)
+        {
+            // создание экземпляра класса 
+            fMenuMusic music = new fMenuMusic();
+            // его вызов
+            music.ShowDialog();
+        }
+
+        // Обработка нажатия кнопки, реализующей вызов формы меню видео игры
+        private void btnMenuVideo_Click(object sender, EventArgs e)
+        {
+            // создание экземпляра класса 
+            fMenuVideo video = new fMenuVideo();
+            // его вызов
+            video.ShowDialog();
+        }
     }
 }

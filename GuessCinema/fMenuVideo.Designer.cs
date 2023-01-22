@@ -66,6 +66,7 @@
             // btnOurVideo
             // 
             this.btnOurVideo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOurVideo.BackgroundImage")));
+            this.btnOurVideo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOurVideo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnOurVideo.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold);
             this.btnOurVideo.Location = new System.Drawing.Point(547, 310);
@@ -78,6 +79,7 @@
             // btnThemeVideo
             // 
             this.btnThemeVideo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemeVideo.BackgroundImage")));
+            this.btnThemeVideo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemeVideo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThemeVideo.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold);
             this.btnThemeVideo.Location = new System.Drawing.Point(547, 501);
@@ -89,6 +91,7 @@
             // 
             // pctExit
             // 
+            this.pctExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
             this.pctExit.Location = new System.Drawing.Point(16, 654);
@@ -109,7 +112,9 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fMenuVideo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fMenuVideo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
             this.ResumeLayout(false);

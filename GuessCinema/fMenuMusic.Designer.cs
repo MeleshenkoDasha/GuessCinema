@@ -66,6 +66,7 @@
             // btnOurMusic
             // 
             this.btnOurMusic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOurMusic.BackgroundImage")));
+            this.btnOurMusic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOurMusic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnOurMusic.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold);
             this.btnOurMusic.Location = new System.Drawing.Point(547, 310);
@@ -78,6 +79,7 @@
             // btnThemeMusic
             // 
             this.btnThemeMusic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemeMusic.BackgroundImage")));
+            this.btnThemeMusic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemeMusic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThemeMusic.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold);
             this.btnThemeMusic.Location = new System.Drawing.Point(547, 501);
@@ -89,6 +91,7 @@
             // 
             // pctExit
             // 
+            this.pctExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
             this.pctExit.Location = new System.Drawing.Point(16, 654);

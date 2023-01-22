@@ -88,6 +88,7 @@
             this.btnMenuMusic.TabIndex = 0;
             this.btnMenuMusic.Text = "Мелодию";
             this.btnMenuMusic.UseVisualStyleBackColor = true;
+            this.btnMenuMusic.Click += new System.EventHandler(this.btnMenuMusic_Click);
             // 
             // btnMenuVideo
             // 
@@ -102,6 +103,7 @@
             this.btnMenuVideo.TabIndex = 1;
             this.btnMenuVideo.Text = "Фильм";
             this.btnMenuVideo.UseVisualStyleBackColor = true;
+            this.btnMenuVideo.Click += new System.EventHandler(this.btnMenuVideo_Click);
             // 
             // pctVolume
             // 
