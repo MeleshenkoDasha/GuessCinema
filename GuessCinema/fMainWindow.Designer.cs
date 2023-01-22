@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMainWindow));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnMenuMusic = new System.Windows.Forms.Button();
+            this.btnMenuVideo = new System.Windows.Forms.Button();
+            this.pctVolume = new System.Windows.Forms.PictureBox();
+            this.pctHelp = new System.Windows.Forms.PictureBox();
+            this.pctExit = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctVolume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctHelp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -56,11 +56,11 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.041667F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.291667F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.041667F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnMenuMusic, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnMenuVideo, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pctVolume, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pctHelp, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pctExit, 8, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -75,63 +75,64 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1366, 768);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // btnMenuMusic
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button1.Location = new System.Drawing.Point(429, 378);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(392, 132);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Мелодию";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnMenuMusic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuMusic.BackgroundImage")));
+            this.btnMenuMusic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMenuMusic.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnMenuMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnMenuMusic.Location = new System.Drawing.Point(429, 378);
+            this.btnMenuMusic.Name = "btnMenuMusic";
+            this.btnMenuMusic.Size = new System.Drawing.Size(392, 132);
+            this.btnMenuMusic.TabIndex = 0;
+            this.btnMenuMusic.Text = "Мелодию";
+            this.btnMenuMusic.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnMenuVideo
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.button2.Location = new System.Drawing.Point(429, 554);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(392, 132);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Фильм";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnMenuVideo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuVideo.BackgroundImage")));
+            this.btnMenuVideo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnMenuVideo.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnMenuVideo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnMenuVideo.Location = new System.Drawing.Point(429, 554);
+            this.btnMenuVideo.Name = "btnMenuVideo";
+            this.btnMenuVideo.Size = new System.Drawing.Size(392, 132);
+            this.btnMenuVideo.TabIndex = 1;
+            this.btnMenuVideo.Text = "Фильм";
+            this.btnMenuVideo.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pctVolume
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(1026, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pctVolume.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctVolume.Location = new System.Drawing.Point(1026, 18);
+            this.pctVolume.Name = "pctVolume";
+            this.pctVolume.Size = new System.Drawing.Size(93, 93);
+            this.pctVolume.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctVolume.TabIndex = 2;
+            this.pctVolume.TabStop = false;
             // 
-            // pictureBox2
+            // pctHelp
             // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1139, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(93, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.pctHelp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctHelp.Image = ((System.Drawing.Image)(resources.GetObject("pctHelp.Image")));
+            this.pctHelp.Location = new System.Drawing.Point(1139, 18);
+            this.pctHelp.Name = "pctHelp";
+            this.pctHelp.Size = new System.Drawing.Size(93, 93);
+            this.pctHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctHelp.TabIndex = 3;
+            this.pctHelp.TabStop = false;
             // 
-            // pictureBox3
+            // pctExit
             // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1252, 18);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(93, 93);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.pctExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
+            this.pctExit.Location = new System.Drawing.Point(1252, 18);
+            this.pctExit.Name = "pctExit";
+            this.pctExit.Size = new System.Drawing.Size(93, 93);
+            this.pctExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctExit.TabIndex = 4;
+            this.pctExit.TabStop = false;
+            this.pctExit.Click += new System.EventHandler(this.pctExit_Click);
             // 
             // fMainWindow
             // 
@@ -147,9 +148,9 @@
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctVolume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctHelp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,11 +159,11 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnMenuMusic;
+        private System.Windows.Forms.Button btnMenuVideo;
+        private System.Windows.Forms.PictureBox pctVolume;
+        private System.Windows.Forms.PictureBox pctHelp;
+        private System.Windows.Forms.PictureBox pctExit;
     }
 }
 
