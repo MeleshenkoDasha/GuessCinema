@@ -33,5 +33,14 @@ namespace GuessCinema
         {
             Close();
         }
+
+        // Обработка нажатия кнопки, реализующей вызов формы с помощью
+        private void pctHelp_Click(object sender, EventArgs e)
+        {
+            // создание экземпляра класса 
+            fRules rules = new fRules();
+            // его вызов
+            rules.ShowDialog();
+        }
     }
 }

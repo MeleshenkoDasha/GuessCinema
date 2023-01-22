@@ -78,6 +78,7 @@
             // btnMenuMusic
             // 
             this.btnMenuMusic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuMusic.BackgroundImage")));
+            this.btnMenuMusic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenuMusic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMenuMusic.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnMenuMusic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -91,6 +92,7 @@
             // btnMenuVideo
             // 
             this.btnMenuVideo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenuVideo.BackgroundImage")));
+            this.btnMenuVideo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMenuVideo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMenuVideo.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnMenuVideo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -103,6 +105,7 @@
             // 
             // pctVolume
             // 
+            this.pctVolume.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctVolume.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctVolume.Location = new System.Drawing.Point(1026, 18);
             this.pctVolume.Name = "pctVolume";
@@ -113,6 +116,7 @@
             // 
             // pctHelp
             // 
+            this.pctHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctHelp.Image = ((System.Drawing.Image)(resources.GetObject("pctHelp.Image")));
             this.pctHelp.Location = new System.Drawing.Point(1139, 18);
@@ -121,9 +125,11 @@
             this.pctHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctHelp.TabIndex = 3;
             this.pctHelp.TabStop = false;
+            this.pctHelp.Click += new System.EventHandler(this.pctHelp_Click);
             // 
             // pctExit
             // 
+            this.pctExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
             this.pctExit.Location = new System.Drawing.Point(1252, 18);

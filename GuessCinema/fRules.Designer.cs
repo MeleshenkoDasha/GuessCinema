@@ -43,6 +43,9 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
@@ -56,7 +59,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.label5, 3, 9);
             this.tableLayoutPanel1.Controls.Add(this.label6, 3, 11);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 13;
@@ -78,6 +80,7 @@
             // 
             // pctExit
             // 
+            this.pctExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctExit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
             this.pctExit.Location = new System.Drawing.Point(16, 649);
@@ -177,7 +180,9 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fRules";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fRules";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
