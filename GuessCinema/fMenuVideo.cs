@@ -21,5 +21,11 @@ namespace GuessCinema
         {
             Close();
         }
+
+        private void btnThemeVideo_Click(object sender, EventArgs e)
+        {
+            fVideoTheme videoTheme  = new fVideoTheme();
+            videoTheme.ShowDialog();
+        }
     }
 }

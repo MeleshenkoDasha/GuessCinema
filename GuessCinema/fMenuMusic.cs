@@ -21,5 +21,11 @@ namespace GuessCinema
         {
             Close();
         }
+
+        private void btnThemeMusic_Click(object sender, EventArgs e)
+        {
+            fMusicTheme musicTheme= new fMusicTheme();
+            musicTheme.ShowDialog();
+        }
     }
 }

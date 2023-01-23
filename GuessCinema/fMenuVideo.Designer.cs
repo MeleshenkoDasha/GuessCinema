@@ -92,6 +92,7 @@
             this.btnThemeVideo.TabIndex = 1;
             this.btnThemeVideo.Text = "Тематическая игра";
             this.btnThemeVideo.UseVisualStyleBackColor = true;
+            this.btnThemeVideo.Click += new System.EventHandler(this.btnThemeVideo_Click);
             // 
             // pctExit
             // 
