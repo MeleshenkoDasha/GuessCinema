@@ -211,6 +211,7 @@
             this.pctExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctExit.TabIndex = 9;
             this.pctExit.TabStop = false;
+            this.pctExit.Click += new System.EventHandler(this.pctExit_Click);
             // 
             // fVideoTheme
             // 
@@ -222,6 +223,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "fVideoTheme";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fVideoTheme";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tableLayoutPanel1.ResumeLayout(false);

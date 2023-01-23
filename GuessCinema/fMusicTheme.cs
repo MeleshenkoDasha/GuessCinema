@@ -16,5 +16,10 @@ namespace GuessCinema
         {
             InitializeComponent();
         }
+
+        private void pctExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
