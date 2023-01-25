@@ -70,6 +70,18 @@
     <Compile Include="fMusicTheme.Designer.cs">
       <DependentUpon>fMusicTheme.cs</DependentUpon>
     </Compile>
+    <Compile Include="fNameOnePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNameOnePlayer.Designer.cs">
+      <DependentUpon>fNameOnePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNameTwoPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNameTwoPlayer.Designer.cs">
+      <DependentUpon>fNameTwoPlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRules.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMusicTheme.resx">
       <DependentUpon>fMusicTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNameOnePlayer.resx">
+      <DependentUpon>fNameOnePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNameTwoPlayer.resx">
+      <DependentUpon>fNameTwoPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRules.resx">
       <DependentUpon>fRules.cs</DependentUpon>
