@@ -25,9 +25,9 @@ namespace GuessCinema
             {
                 imageBack = new Bitmap(@"Resources\\фон.jpg");
                 System.Drawing.Image imageButton = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");
-                btnOnePlayerMusic.Image = imageButton;
-                btnTwoPlayersMusic.Image = imageButton;
-                btnThemeMusic.Image = imageButton;
+                btnOnePlayerMusic.BackgroundImage = imageButton;
+                btnTwoPlayersMusic.BackgroundImage = imageButton;
+                btnThemeMusic.BackgroundImage = imageButton;
             }
             else
             {

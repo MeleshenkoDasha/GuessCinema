@@ -95,8 +95,9 @@
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(403, 132);
             this.btnSettings.TabIndex = 2;
-            this.btnSettings.Text = "button2";
+            this.btnSettings.Text = "Настройки";
             this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // fStartMenuGame
             // 

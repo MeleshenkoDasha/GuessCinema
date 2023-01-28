@@ -27,7 +27,7 @@ namespace GuessCinema
                 imageBack = new Bitmap(@"Resources\\темы.jpg");
                 Image imageButton = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");
                 foreach (Button button in buttons) 
-                    button.Image = imageButton;
+                    button.BackgroundImage = imageButton;
             }
             else
             {

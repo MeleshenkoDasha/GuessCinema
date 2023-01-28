@@ -46,5 +46,11 @@ namespace GuessCinema
           //  clsManagerForms.cancelSelectcontents();
           //  clsManagerForms.cancelSelectCountGamers();
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            fSettings settings= new fSettings();
+            settings.ShowDialog();
+        }
     }
 }
