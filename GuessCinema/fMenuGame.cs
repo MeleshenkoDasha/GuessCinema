@@ -50,5 +50,21 @@ namespace GuessCinema
             fSelectedTheme theme = new fSelectedTheme();
             theme.ShowDialog();
         }
+
+        void callStartMenuGame()
+        {
+            fStartMenuGame startMenuGame = new fStartMenuGame();
+            startMenuGame.ShowDialog();
+        }
+
+        private void btnOnePlayerMusic_Click(object sender, EventArgs e)
+        {
+            callStartMenuGame();
+        }
+
+        private void btnTwoPlayersMusic_Click(object sender, EventArgs e)
+        {
+            callStartMenuGame();
+        }
     }
 }

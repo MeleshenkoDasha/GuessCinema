@@ -78,6 +78,7 @@
             this.btnTwoPlayersMusic.TabIndex = 0;
             this.btnTwoPlayersMusic.Text = "Два игрока";
             this.btnTwoPlayersMusic.UseVisualStyleBackColor = true;
+            this.btnTwoPlayersMusic.Click += new System.EventHandler(this.btnTwoPlayersMusic_Click);
             // 
             // btnThemeMusic
             // 
@@ -116,6 +117,7 @@
             this.btnOnePlayerMusic.TabIndex = 3;
             this.btnOnePlayerMusic.Text = "Один игрок";
             this.btnOnePlayerMusic.UseVisualStyleBackColor = true;
+            this.btnOnePlayerMusic.Click += new System.EventHandler(this.btnOnePlayerMusic_Click);
             // 
             // fMenuGame
             // 
