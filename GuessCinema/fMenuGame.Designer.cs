@@ -1,6 +1,6 @@
 ﻿namespace GuessCinema
 {
-    partial class fMenuVideo
+    partial class fMenuGame
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMenuVideo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMenuGame));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnTwoPlayerVideo = new System.Windows.Forms.Button();
-            this.btnThemeVideo = new System.Windows.Forms.Button();
+            this.btnTwoPlayersMusic = new System.Windows.Forms.Button();
+            this.btnThemeMusic = new System.Windows.Forms.Button();
             this.pctExit = new System.Windows.Forms.PictureBox();
-            this.btnOnePlayerVideo = new System.Windows.Forms.Button();
+            this.btnOnePlayerMusic = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
             this.SuspendLayout();
@@ -48,10 +48,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.btnTwoPlayerVideo, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnThemeVideo, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnTwoPlayersMusic, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnThemeMusic, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.pctExit, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.btnOnePlayerVideo, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnOnePlayerMusic, 4, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -67,32 +67,30 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1366, 768);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // btnTwoPlayerVideo
+            // btnTwoPlayersMusic
             // 
-            this.btnTwoPlayerVideo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTwoPlayerVideo.BackgroundImage")));
-            this.btnTwoPlayerVideo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTwoPlayerVideo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTwoPlayerVideo.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold);
-            this.btnTwoPlayerVideo.Location = new System.Drawing.Point(547, 371);
-            this.btnTwoPlayerVideo.Name = "btnTwoPlayerVideo";
-            this.btnTwoPlayerVideo.Size = new System.Drawing.Size(403, 124);
-            this.btnTwoPlayerVideo.TabIndex = 0;
-            this.btnTwoPlayerVideo.Text = "Своя игра";
-            this.btnTwoPlayerVideo.UseVisualStyleBackColor = true;
+            this.btnTwoPlayersMusic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTwoPlayersMusic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTwoPlayersMusic.Font = new System.Drawing.Font("Cambria", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnTwoPlayersMusic.Location = new System.Drawing.Point(547, 371);
+            this.btnTwoPlayersMusic.Name = "btnTwoPlayersMusic";
+            this.btnTwoPlayersMusic.Size = new System.Drawing.Size(403, 124);
+            this.btnTwoPlayersMusic.TabIndex = 0;
+            this.btnTwoPlayersMusic.Text = "Два игрока";
+            this.btnTwoPlayersMusic.UseVisualStyleBackColor = true;
             // 
-            // btnThemeVideo
+            // btnThemeMusic
             // 
-            this.btnThemeVideo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemeVideo.BackgroundImage")));
-            this.btnThemeVideo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemeVideo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThemeVideo.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold);
-            this.btnThemeVideo.Location = new System.Drawing.Point(547, 524);
-            this.btnThemeVideo.Name = "btnThemeVideo";
-            this.btnThemeVideo.Size = new System.Drawing.Size(403, 124);
-            this.btnThemeVideo.TabIndex = 1;
-            this.btnThemeVideo.Text = "Тематическая игра";
-            this.btnThemeVideo.UseVisualStyleBackColor = true;
-            this.btnThemeVideo.Click += new System.EventHandler(this.btnThemeVideo_Click);
+            this.btnThemeMusic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThemeMusic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThemeMusic.Font = new System.Drawing.Font("Cambria", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnThemeMusic.Location = new System.Drawing.Point(547, 524);
+            this.btnThemeMusic.Name = "btnThemeMusic";
+            this.btnThemeMusic.Size = new System.Drawing.Size(403, 124);
+            this.btnThemeMusic.TabIndex = 1;
+            this.btnThemeMusic.Text = "Тематическая игра";
+            this.btnThemeMusic.UseVisualStyleBackColor = true;
+            this.btnThemeMusic.Click += new System.EventHandler(this.btnThemeMusic_Click);
             // 
             // pctExit
             // 
@@ -107,31 +105,32 @@
             this.pctExit.TabStop = false;
             this.pctExit.Click += new System.EventHandler(this.pctExit_Click);
             // 
-            // btnOnePlayerVideo
+            // btnOnePlayerMusic
             // 
-            this.btnOnePlayerVideo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOnePlayerVideo.BackgroundImage")));
-            this.btnOnePlayerVideo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnOnePlayerVideo.Font = new System.Drawing.Font("Cambria", 26.25F, System.Drawing.FontStyle.Bold);
-            this.btnOnePlayerVideo.Location = new System.Drawing.Point(547, 218);
-            this.btnOnePlayerVideo.Name = "btnOnePlayerVideo";
-            this.btnOnePlayerVideo.Size = new System.Drawing.Size(403, 124);
-            this.btnOnePlayerVideo.TabIndex = 3;
-            this.btnOnePlayerVideo.Text = "Один игрок";
-            this.btnOnePlayerVideo.UseVisualStyleBackColor = true;
+            this.btnOnePlayerMusic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOnePlayerMusic.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOnePlayerMusic.Font = new System.Drawing.Font("Cambria", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnOnePlayerMusic.Location = new System.Drawing.Point(547, 218);
+            this.btnOnePlayerMusic.Name = "btnOnePlayerMusic";
+            this.btnOnePlayerMusic.Size = new System.Drawing.Size(403, 124);
+            this.btnOnePlayerMusic.TabIndex = 3;
+            this.btnOnePlayerMusic.Text = "Один игрок";
+            this.btnOnePlayerMusic.UseVisualStyleBackColor = true;
             // 
-            // fMenuVideo
+            // fMenuGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fMenuVideo";
+            this.Name = "fMenuGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fMenuVideo";
+            this.Text = "fMenuGame";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.fMenuGame_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
             this.ResumeLayout(false);
@@ -141,9 +140,9 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnTwoPlayerVideo;
-        private System.Windows.Forms.Button btnThemeVideo;
+        private System.Windows.Forms.Button btnTwoPlayersMusic;
+        private System.Windows.Forms.Button btnThemeMusic;
         private System.Windows.Forms.PictureBox pctExit;
-        private System.Windows.Forms.Button btnOnePlayerVideo;
+        private System.Windows.Forms.Button btnOnePlayerMusic;
     }
 }

@@ -21,5 +21,10 @@ namespace GuessCinema
         {
             Close();
         }
+
+        private void fStartMenuGame_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

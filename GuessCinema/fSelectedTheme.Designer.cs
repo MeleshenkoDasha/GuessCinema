@@ -1,6 +1,6 @@
 ﻿namespace GuessCinema
 {
-    partial class fMusicTheme
+    partial class fSelectedTheme
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMusicTheme));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fSelectedTheme));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -81,114 +81,105 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1366, 768);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(131, 218);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(390, 132);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Рок";
+            this.button1.Text = "Кнопка";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button2.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(540, 218);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(390, 132);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Десткие песни";
+            this.button2.Text = "Кнопка";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(949, 218);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(390, 132);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Лихиие 90-е";
+            this.button3.Text = "Кнопка";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button4.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button4.Location = new System.Drawing.Point(131, 363);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(390, 132);
             this.button4.TabIndex = 3;
-            this.button4.Text = "SoundTracks";
+            this.button4.Text = "Кнопка";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button5.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button5.Location = new System.Drawing.Point(540, 363);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(390, 132);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Старые песни о главном";
+            this.button5.Text = "Кнопка";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button6.Location = new System.Drawing.Point(949, 363);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(390, 132);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Фабрика звезд";
+            this.button6.Text = "Кнопка";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button7.Location = new System.Drawing.Point(131, 508);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(390, 132);
             this.button7.TabIndex = 6;
-            this.button7.Text = "2000-е";
+            this.button7.Text = "Кнопка";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button8.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button8.Location = new System.Drawing.Point(540, 508);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(390, 132);
             this.button8.TabIndex = 7;
-            this.button8.Text = "Патриотические";
+            this.button8.Text = "Кнопка";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
             this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button9.Font = new System.Drawing.Font("Cambria", 27.75F, System.Drawing.FontStyle.Bold);
             this.button9.Location = new System.Drawing.Point(949, 508);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(390, 132);
             this.button9.TabIndex = 8;
-            this.button9.Text = "Времена года";
+            this.button9.Text = "Кнопка";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // pctExit
@@ -203,19 +194,19 @@
             this.pctExit.TabStop = false;
             this.pctExit.Click += new System.EventHandler(this.pctExit_Click);
             // 
-            // fMusicTheme
+            // fSelectedTheme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "fMusicTheme";
+            this.Name = "fSelectedTheme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fMusicTheme";
+            this.Text = "fSelectedTheme";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.fSelectedTheme_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
             this.ResumeLayout(false);
@@ -225,15 +216,15 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pctExit;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Button button7;
+        public System.Windows.Forms.Button button8;
+        public System.Windows.Forms.Button button9;
     }
 }

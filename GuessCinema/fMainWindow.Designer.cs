@@ -155,6 +155,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.fMainWindow_Activated);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctHelp)).EndInit();

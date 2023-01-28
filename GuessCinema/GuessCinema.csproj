@@ -46,29 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsManagerForms.cs" />
     <Compile Include="fMainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fMainWindow.Designer.cs">
       <DependentUpon>fMainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="fMenuMusic.cs">
+    <Compile Include="fMenuGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fMenuMusic.Designer.cs">
-      <DependentUpon>fMenuMusic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fMenuVideo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fMenuVideo.Designer.cs">
-      <DependentUpon>fMenuVideo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fMusicTheme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fMusicTheme.Designer.cs">
-      <DependentUpon>fMusicTheme.cs</DependentUpon>
+    <Compile Include="fMenuGame.Designer.cs">
+      <DependentUpon>fMenuGame.cs</DependentUpon>
     </Compile>
     <Compile Include="fNameOnePlayer.cs">
       <SubType>Form</SubType>
@@ -88,31 +77,25 @@
     <Compile Include="fRules.Designer.cs">
       <DependentUpon>fRules.cs</DependentUpon>
     </Compile>
+    <Compile Include="fSelectedTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSelectedTheme.Designer.cs">
+      <DependentUpon>fSelectedTheme.cs</DependentUpon>
+    </Compile>
     <Compile Include="fStartMenuGame.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fStartMenuGame.Designer.cs">
       <DependentUpon>fStartMenuGame.cs</DependentUpon>
     </Compile>
-    <Compile Include="fVideoTheme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fVideoTheme.Designer.cs">
-      <DependentUpon>fVideoTheme.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fMainWindow.resx">
       <DependentUpon>fMainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fMenuMusic.resx">
-      <DependentUpon>fMenuMusic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fMenuVideo.resx">
-      <DependentUpon>fMenuVideo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fMusicTheme.resx">
-      <DependentUpon>fMusicTheme.cs</DependentUpon>
+    <EmbeddedResource Include="fMenuGame.resx">
+      <DependentUpon>fMenuGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fNameOnePlayer.resx">
       <DependentUpon>fNameOnePlayer.cs</DependentUpon>
@@ -123,11 +106,11 @@
     <EmbeddedResource Include="fRules.resx">
       <DependentUpon>fRules.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fSelectedTheme.resx">
+      <DependentUpon>fSelectedTheme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fStartMenuGame.resx">
       <DependentUpon>fStartMenuGame.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fVideoTheme.resx">
-      <DependentUpon>fVideoTheme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,6 +133,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back %282%29 — копия.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\в.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
