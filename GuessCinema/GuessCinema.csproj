@@ -53,6 +53,12 @@
     <Compile Include="fAnswerForm.Designer.cs">
       <DependentUpon>fAnswerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="fEndGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEndGame.Designer.cs">
+      <DependentUpon>fEndGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fAnswerForm.resx">
       <DependentUpon>fAnswerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEndGame.resx">
+      <DependentUpon>fEndGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMainWindow.resx">
       <DependentUpon>fMainWindow.cs</DependentUpon>

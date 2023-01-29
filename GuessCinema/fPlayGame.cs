@@ -50,7 +50,8 @@ namespace GuessCinema
 
         private void btnEndGame_Click(object sender, EventArgs e)
         {
-            Close();
+            fEndGame endgame = new fEndGame();
+            endgame.ShowDialog();
         }
 
         private void pctStartGame_Click(object sender, EventArgs e)
