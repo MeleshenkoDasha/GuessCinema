@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsManagerForms.cs" />
+    <Compile Include="fAnswerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAnswerForm.Designer.cs">
+      <DependentUpon>fAnswerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="fMainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAnswerForm.resx">
+      <DependentUpon>fAnswerForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fMainWindow.resx">
       <DependentUpon>fMainWindow.cs</DependentUpon>
     </EmbeddedResource>
