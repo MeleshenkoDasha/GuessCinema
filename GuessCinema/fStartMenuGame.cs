@@ -43,14 +43,19 @@ namespace GuessCinema
 
         private void fStartMenuGame_Activated(object sender, EventArgs e)
         {
-          //  clsManagerForms.cancelSelectcontents();
-          //  clsManagerForms.cancelSelectCountGamers();
+
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
             fSettings settings= new fSettings();
             settings.ShowDialog();
+        }
+
+        private void btnStartGame_Click(object sender, EventArgs e)
+        {
+            fPlayGame game=new fPlayGame();
+            game.ShowDialog();
         }
     }
 }
