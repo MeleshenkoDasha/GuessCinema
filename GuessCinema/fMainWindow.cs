@@ -67,12 +67,14 @@ namespace GuessCinema
         Image pctIsSound = Image.FromFile("Resources\\выкл.png");
         Image pctNoSound = Image.FromFile("Resources\\вкл.png");
 
+        // Handling the form load event
         private void fMainWindow_Load(object sender, EventArgs e)
         {
             clsManagementMusicControlCoreForms.LoadForm();
             pctVolume.Image = pctIsSound;
         }
 
+        // Handling the event of pressing the mute button
         private void pctVolume_Click(object sender, EventArgs e)
         {
             if (clsManagementMusicControlCoreForms.mainWindow.wmpMain.settings.volume == 0)

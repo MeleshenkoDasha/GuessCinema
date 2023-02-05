@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="clsManagementMusicControlCoreForms.cs" />
     <Compile Include="clsManagementSelectForms.cs" />
+    <Compile Include="clsManagmentSelectTheme.cs" />
     <Compile Include="fAnswerForm.cs">
       <SubType>Form</SubType>
     </Compile>

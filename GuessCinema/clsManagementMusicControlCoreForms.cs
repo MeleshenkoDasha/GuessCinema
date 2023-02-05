@@ -18,12 +18,15 @@ namespace GuessCinema
 
         public static fMainWindow mainWindow = new fMainWindow();
 
+
+        // Function handling form load event
         public static void LoadForm() 
         {
             mainWindow.wmpMain.URL = "Resources\\фон заставка.mp3";
             mainWindow.wmpMain.Ctlcontrols.play();
         }
 
+        // Function handling mute event
         public static void btnClickSound() 
         {
             if (mainWindow.wmpMain.settings.volume == 0) mainWindow.wmpMain.settings.volume = 100;

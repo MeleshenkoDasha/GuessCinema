@@ -46,7 +46,7 @@ namespace GuessCinema
         }
 
         // Clearing the content selection flags
-        public static void cancelSelectcontents()
+        public static void cancelSelectContents()
         {
             modeOurFiles = false; 
             modeYourFiles = false; 

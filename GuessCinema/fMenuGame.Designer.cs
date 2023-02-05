@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMenuGame));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnTwoPlayersMusic = new System.Windows.Forms.Button();
-            this.btnThemeMusic = new System.Windows.Forms.Button();
+            this.btnSelectTheme = new System.Windows.Forms.Button();
             this.pctExit = new System.Windows.Forms.PictureBox();
             this.btnOnePlayerMusic = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -49,7 +49,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.Controls.Add(this.btnTwoPlayersMusic, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnThemeMusic, 4, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnSelectTheme, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.pctExit, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.btnOnePlayerMusic, 4, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -80,18 +80,18 @@
             this.btnTwoPlayersMusic.UseVisualStyleBackColor = true;
             this.btnTwoPlayersMusic.Click += new System.EventHandler(this.btnTwoPlayersMusic_Click);
             // 
-            // btnThemeMusic
+            // btnSelectTheme
             // 
-            this.btnThemeMusic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThemeMusic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThemeMusic.Font = new System.Drawing.Font("Cambria", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnThemeMusic.Location = new System.Drawing.Point(547, 524);
-            this.btnThemeMusic.Name = "btnThemeMusic";
-            this.btnThemeMusic.Size = new System.Drawing.Size(403, 124);
-            this.btnThemeMusic.TabIndex = 1;
-            this.btnThemeMusic.Text = "Тематическая игра";
-            this.btnThemeMusic.UseVisualStyleBackColor = true;
-            this.btnThemeMusic.Click += new System.EventHandler(this.btnThemeMusic_Click);
+            this.btnSelectTheme.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSelectTheme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSelectTheme.Font = new System.Drawing.Font("Cambria", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSelectTheme.Location = new System.Drawing.Point(547, 524);
+            this.btnSelectTheme.Name = "btnSelectTheme";
+            this.btnSelectTheme.Size = new System.Drawing.Size(403, 124);
+            this.btnSelectTheme.TabIndex = 1;
+            this.btnSelectTheme.Text = "Тематическая игра";
+            this.btnSelectTheme.UseVisualStyleBackColor = true;
+            this.btnSelectTheme.Click += new System.EventHandler(this.btnSelectTheme_Click);
             // 
             // pctExit
             // 
@@ -143,7 +143,7 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnTwoPlayersMusic;
-        private System.Windows.Forms.Button btnThemeMusic;
+        private System.Windows.Forms.Button btnSelectTheme;
         private System.Windows.Forms.PictureBox pctExit;
         private System.Windows.Forms.Button btnOnePlayerMusic;
     }

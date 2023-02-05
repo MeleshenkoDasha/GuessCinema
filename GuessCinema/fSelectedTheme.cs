@@ -16,25 +16,32 @@ namespace GuessCinema
         {
             InitializeComponent();
         }
-              
+
+        List<Button> buttons;
 
         private void fSelectedTheme_Load(object sender, EventArgs e)
         {
             Image imageBack = new Bitmap(@"Resources\\1.jpg");
-            Button[] buttons = { button1, button2, button3, button4, button5, button6, button7, button8, button9 };
+            buttons = new List<Button>(){ button1, button2, button3, button4, button5, button6, button7, button8, button9 };
             if (clsManagementSelectForms.modeMusic)
             {
                 imageBack = new Bitmap(@"Resources\\темы.jpg");
                 Image imageButton = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");
-                foreach (Button button in buttons) 
+                foreach (Button button in buttons)
+                {                   
                     button.BackgroundImage = imageButton;
+                    button.Text = clsManagmentSelectTheme.musicTheme[buttons.IndexOf(button)];
+                }
             }
             else
             {
                 imageBack = new Bitmap("Resources\\ффф.jpg");
                 Color colour = Color.FromArgb(128, 255, 128);
                 foreach (Button button in buttons)
-                    button.BackColor = colour;                
+                {
+                    button.BackColor = colour;
+                    button.Text = clsManagmentSelectTheme.videoTheme[buttons.IndexOf(button)];
+                }         
             }
             BackgroundImage = imageBack;
         }

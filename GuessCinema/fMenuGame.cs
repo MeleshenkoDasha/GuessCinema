@@ -18,8 +18,17 @@ namespace GuessCinema
             InitializeComponent();
         }
 
+        /**
+         * 
+         *  This class contains the implementation of a window that prompts you to select the game mode
+         * 
+         * **/
+
+
+        // Handling the form load event
         private void fMenuGame_Load(object sender, EventArgs e)
         {
+            // Depending on the selected game in the previous step, choose the layout of the window form
             System.Drawing.Image imageBack = new Bitmap(@"Resources\\1.jpg");
             if (clsManagementSelectForms.modeMusic)
             {
@@ -27,44 +36,54 @@ namespace GuessCinema
                 System.Drawing.Image imageButton = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");
                 btnOnePlayerMusic.BackgroundImage = imageButton;
                 btnTwoPlayersMusic.BackgroundImage = imageButton;
-                btnThemeMusic.BackgroundImage = imageButton;
+                btnSelectTheme.BackgroundImage = imageButton;
             }
             else
             {
                 imageBack = new Bitmap("Resources\\в.jpg");
-                btnOnePlayerMusic.BackColor = Color.FromArgb(128, 255, 128);
-                btnTwoPlayersMusic.BackColor = Color.FromArgb(128, 255, 128);
-                btnThemeMusic.BackColor = Color.FromArgb(128, 255, 128);
+                Color btnColor = Color.FromArgb(128, 255, 128);
+                btnOnePlayerMusic.BackColor = btnColor;
+                btnTwoPlayersMusic.BackColor = btnColor;
+                btnSelectTheme.BackColor = btnColor;
             }
             BackgroundImage = imageBack;
             
         }
 
+        // Handling the form close event
         private void pctExit_Click(object sender, EventArgs e)
         {
+            clsManagementSelectForms.cancelSelectModeGame();
             Close();
         }
 
-        private void btnThemeMusic_Click(object sender, EventArgs e)
-        {
-            fSelectedTheme theme = new fSelectedTheme();
-            theme.ShowDialog();
-        }
-
+        // Function to call the form of the start menu of the game
         void callStartMenuGame()
         {
             fStartMenuGame startMenuGame = new fStartMenuGame();
             startMenuGame.ShowDialog();
         }
 
+        // Handling a button press event
         private void btnOnePlayerMusic_Click(object sender, EventArgs e)
         {
+            clsManagementSelectForms.modePvE = true;
             callStartMenuGame();
         }
 
+        // Handling a button press event
         private void btnTwoPlayersMusic_Click(object sender, EventArgs e)
         {
+            clsManagementSelectForms.modePvP= true;
             callStartMenuGame();
+        }
+
+        // Handling a button press event
+        private void btnSelectTheme_Click(object sender, EventArgs e)
+        {
+            clsManagementSelectForms.modePvE = true;
+            fSelectedTheme theme = new fSelectedTheme();
+            theme.ShowDialog();
         }
     }
 }
