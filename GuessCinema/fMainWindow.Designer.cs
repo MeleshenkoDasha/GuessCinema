@@ -35,10 +35,12 @@
             this.pctVolume = new System.Windows.Forms.PictureBox();
             this.pctHelp = new System.Windows.Forms.PictureBox();
             this.pctExit = new System.Windows.Forms.PictureBox();
+            this.wmpMain = new AxWMPLib.AxWindowsMediaPlayer();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctHelp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wmpMain)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -61,6 +63,7 @@
             this.tableLayoutPanel1.Controls.Add(this.pctVolume, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.pctHelp, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.pctExit, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.wmpMain, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -107,6 +110,7 @@
             // 
             // pctVolume
             // 
+            this.pctVolume.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pctVolume.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctVolume.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pctVolume.Location = new System.Drawing.Point(1026, 18);
@@ -115,6 +119,7 @@
             this.pctVolume.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctVolume.TabIndex = 2;
             this.pctVolume.TabStop = false;
+            this.pctVolume.Click += new System.EventHandler(this.pctVolume_Click);
             // 
             // pctHelp
             // 
@@ -142,6 +147,16 @@
             this.pctExit.TabStop = false;
             this.pctExit.Click += new System.EventHandler(this.pctExit_Click);
             // 
+            // wmpMain
+            // 
+            this.wmpMain.Enabled = true;
+            this.wmpMain.Location = new System.Drawing.Point(17, 18);
+            this.wmpMain.Name = "wmpMain";
+            this.wmpMain.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpMain.OcxState")));
+            this.wmpMain.Size = new System.Drawing.Size(144, 51);
+            this.wmpMain.TabIndex = 5;
+            this.wmpMain.Visible = false;
+            // 
             // fMainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,11 +170,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Activated += new System.EventHandler(this.fMainWindow_Activated);
+            this.Load += new System.EventHandler(this.fMainWindow_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pctVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctHelp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wmpMain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,9 +186,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnMenuMusic;
         private System.Windows.Forms.Button btnMenuVideo;
-        private System.Windows.Forms.PictureBox pctVolume;
         private System.Windows.Forms.PictureBox pctHelp;
         private System.Windows.Forms.PictureBox pctExit;
+        public System.Windows.Forms.PictureBox pctVolume;
+        public AxWMPLib.AxWindowsMediaPlayer wmpMain;
     }
 }
 

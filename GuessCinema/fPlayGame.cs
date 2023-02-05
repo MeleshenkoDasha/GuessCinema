@@ -20,7 +20,7 @@ namespace GuessCinema
         private void fPlayGame_Load(object sender, EventArgs e)
         {
             Image imageBack = new Bitmap(@"Resources\\1.jpg");
-            if (clsManagerForms.modeMusic)
+            if (clsManagementSelectForms.modeMusic)
             {
                 imageBack = new Bitmap(@"Resources\\Fotolia_66907464_L.jpg");                
                 btnNext.BackColor = Color.FromArgb(108, 84, 248);
@@ -60,7 +60,7 @@ namespace GuessCinema
             tableLayoutPanel1.SetColumnSpan(pctStartGame, 1);
             tableLayoutPanel1.SetCellPosition(pctStartGame, new TableLayoutPanelCellPosition(0, 0));
             pctStartGame.Enabled = false;
-            if (clsManagerForms.modeVideo)
+            if (clsManagementSelectForms.modeVideo)
             {
                 WMP.Visible = true;
                 WMP.uiMode = "none";

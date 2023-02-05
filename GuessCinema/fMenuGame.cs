@@ -21,7 +21,7 @@ namespace GuessCinema
         private void fMenuGame_Load(object sender, EventArgs e)
         {
             System.Drawing.Image imageBack = new Bitmap(@"Resources\\1.jpg");
-            if (clsManagerForms.modeMusic)
+            if (clsManagementSelectForms.modeMusic)
             {
                 imageBack = new Bitmap(@"Resources\\фон.jpg");
                 System.Drawing.Image imageButton = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");

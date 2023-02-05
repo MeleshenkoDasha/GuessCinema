@@ -20,7 +20,7 @@ namespace GuessCinema
         private void fEndGame_Load(object sender, EventArgs e)
         {
             Image image;
-            if (clsManagerForms.modeMusic)
+            if (clsManagementSelectForms.modeMusic)
             {
                 image = new Bitmap(@"Resources\\nota15.png");
                 btnExit.BackgroundImage = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");

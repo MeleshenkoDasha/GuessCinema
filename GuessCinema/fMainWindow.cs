@@ -14,58 +14,73 @@ namespace GuessCinema
     {
 
         /**
-         * fMainWindow - класс, в котором описано главное окно игры
+         * fMainWindow is the class that describes the main window of the game
          *
-         * В данном классе содержится обработчики событий: 
-         * нажатия на кнопки, которые видит пользователь         
-         *  Закрытие окна
-         *  Вызов онка помощи
-         *  Отключения/включения звука игры
-         *  Вызовы дополнительных игровых меню
+         * This class contains event handlers: 
+         * Clicking on the buttons that the user sees         
+         * Closing the window
+         * Calling the help window
+         * Muting/muting the game sound
+         * Calling additional game menus
          */
+
+
         public fMainWindow()
         {
             InitializeComponent();
         }
 
+        // Function that calls the game mode selection form
         void openModelWindow() 
         {
             fMenuGame menuGame = new fMenuGame();
             menuGame.ShowDialog();
         }
 
-        // Обработка нажатия кнопки, реализующей закрытие формы игры
+        // Handling the button that closes the game form
         private void pctExit_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        // Обработка нажатия кнопки, реализующей вызов формы с помощью
+        // Handling a button press, which brings up a form with game rules and gameplay tips
         private void pctHelp_Click(object sender, EventArgs e)
         {
-            // создание экземпляра класса 
             fRules rules = new fRules();
-            // его вызов
             rules.ShowDialog();
         }
 
-        // Обработка нажатия кнопки, реализующей вызов формы меню музыкальной игры
+        // Handling a click on a button that brings up a music game menu form
         private void btnMenuMusic_Click(object sender, EventArgs e)
         {
-            clsManagerForms.modeMusic = true;
+            clsManagementSelectForms.modeMusic = true;
             openModelWindow();
         }
 
-        // Обработка нажатия кнопки, реализующей вызов формы меню видео игры
+        // Handling a click on the button that brings up the video game menu form
         private void btnMenuVideo_Click(object sender, EventArgs e)
         {
-            clsManagerForms.modeVideo = true;
+            clsManagementSelectForms.modeVideo = true;
             openModelWindow();
+        }       
+
+        Image pctIsSound = Image.FromFile("Resources\\выкл.png");
+        Image pctNoSound = Image.FromFile("Resources\\вкл.png");
+
+        private void fMainWindow_Load(object sender, EventArgs e)
+        {
+            clsManagementMusicControlCoreForms.LoadForm();
+            pctVolume.Image = pctIsSound;
         }
 
-        private void fMainWindow_Activated(object sender, EventArgs e)
+        private void pctVolume_Click(object sender, EventArgs e)
         {
-            clsManagerForms.cancelSelectModeGame();
+            if (clsManagementMusicControlCoreForms.mainWindow.wmpMain.settings.volume == 0)
+                pctVolume.Image = pctIsSound;
+            else 
+                pctVolume.Image = pctNoSound;
+            clsManagementMusicControlCoreForms.btnClickSound();
+
         }
     }
 }

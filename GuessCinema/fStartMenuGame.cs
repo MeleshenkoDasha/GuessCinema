@@ -25,7 +25,7 @@ namespace GuessCinema
         private void fStartMenuGame_Load(object sender, EventArgs e)
         {
             Image imageBack = new Bitmap(@"Resources\\1.jpg");
-            if (clsManagerForms.modeMusic)
+            if (clsManagementSelectForms.modeMusic)
             {
                 imageBack = new Bitmap(@"Resources\\фон1.jpg");
                 Image imageButton = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");

@@ -19,7 +19,7 @@ namespace GuessCinema
 
         private void fSettings_Load(object sender, EventArgs e)
         {           
-            if (clsManagerForms.modeMusic)
+            if (clsManagementSelectForms.modeMusic)
             {                
                 Image imageButton = new Bitmap(@"Resources\\www.GetBg.net_Backgrounds_Blue_background_with_highlights_035592_.jpg");
                 gbSettings.BackgroundImage = imageButton;
